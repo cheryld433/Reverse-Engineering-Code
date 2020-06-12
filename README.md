@@ -26,12 +26,14 @@ As a new user to this webpage I would like to create an account and save my cont
 
 * config.json: Transmits data between the server and the application. The files `development` object connects the application to the database (ex: mySQL workbench), the `production` object connects the application to the container based cloud (ex: Heroku).
 
-* passport.js: Telling passport we want to login with an username/email, email and password. When the user signs in using an email, the application  will search the database (`findOne`) for a user connected to the given email. 
+* passport.js: Telling passport we want to login with an username/email, email and password. When the user signs in using an email, the application  will search the database (`findOne`) for a user connected to the given email. If no user is found a message will indicate the email or password was incorrect. biolerplate code (code that has to be included) serializes and deserialize the data.
 -- file dependent on: `'../models'`.
 
 ### MODELS
 * index.js: 
+
 -- file dependent on: `'/../config/config.json'`.
+
 * user.js:
 
 ### PUBLIC
