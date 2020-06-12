@@ -1,54 +1,54 @@
 # Reverse-Engineering-Code
 
--- Password Authentication --
+### Password Authentication 
 This application allows the user to create an account, save the newly created account and log in and out of the account.
 
--- User Story --
+### User Story 
 As a new user to this webpage I would like to createan account and save my contact information for later use.
 
--- Packages required -- 
-*`npm install passport`
-*`npm install passort-local`
-*`npm install fs`
-*`npm install path`
-*`npm install sequelize`
-*`npm install bcrypt`
-*`npm install express`
-*`npm install express-session`
+### Packages required 
+* `npm install passport`
+* `npm install passort-local`
+* `npm install fs`
+* `npm install path`
+* `npm install sequelize`
+* `npm install bcrypt`
+* `npm install express`
+* `npm install express-session`
 
--- Usage --
+### Usage 
 
--- Files Explained --
-CONFIG
-MIDDLEWARE
-isAuthenticated.js: 
-config.json: 
-passport.js:
+## Files Explained 
+### CONFIG
+### MIDDLEWARE
+* isAuthenticated.js: 
+* config.json: 
+* passport.js:
 
-MODELS
-index.js:
-User.js:
+### MODELS
+* index.js:
+* user.js:
 
-PUBLIC
-JS
-login.js:
-members.js:
-signup.js:
-STYLESHEETS
-style.css:
+### PUBLIC
+### JS
+* login.js:
+* members.js:
+* signup.js:
+### STYLESHEETS
+* style.css:
 
-login.html:
-members.html:
-signup.js:
+* login.html:
+* members.html:
+* signup.js:
 
-ROUTES
-api-routes.js:
-html-routes.js:
+### ROUTES
+* api-routes.js:
+* html-routes.js:
 
-package-lock.json: 
-package.json: 
+* package-lock.json: 
+* package.json: 
 
-server.js:
+* server.js:
 
 
 
