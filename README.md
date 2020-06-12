@@ -19,11 +19,13 @@ As a new user to this webpage I would like to create an account and save my cont
 ### Usage 
 
 
-## Files Explained 
+## Files Explained
 -- CONFIG
  --- MIDDLEWARE   
-* isAuthenticated.js: 
+* isAuthenticated.js: Restricts the routes the user is not allowed to visit until they are logged in. It will redirect the user to the login page until the user provides a username and password. Once logged in, it continues with the request.
+
 * config.json: 
+
 * passport.js: 
 -- file dependent on: `'../models'`.
 
