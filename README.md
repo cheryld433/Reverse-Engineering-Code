@@ -24,9 +24,9 @@ As a new user to this webpage I would like to create an account and save my cont
  --- MIDDLEWARE   
 * isAuthenticated.js: Restricts the routes the user is not allowed to visit until they are logged in. It will redirect the user to the login page until the user provides a username and password (`return res.redirect("/");`). Once logged in, it continues with the request (`return next();`).
 
-* config.json: Transmits data between the server and the and the application. The files `development` object connects the application to the database (ex: mySQL workbench), the `production` object connects the application to the container based cloud (ex: Heroku).
+* config.json: Transmits data between the server and the application. The files `development` object connects the application to the database (ex: mySQL workbench), the `production` object connects the application to the container based cloud (ex: Heroku).
 
-* passport.js: 
+* passport.js: Telling passport we want to login with an username/email, email and password. When the user signs in using an email, the application  will search the database (`findOne`) for a user connected to the given email. 
 -- file dependent on: `'../models'`.
 
 ### MODELS
