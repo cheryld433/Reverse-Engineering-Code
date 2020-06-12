@@ -7,14 +7,14 @@ This application allows the user to create an account, save the newly created ac
 As a new user to this webpage I would like to createan account and save my contact information for later use.
 
 -- Packages required -- 
-`npm install passport`
-`npm install passort-local`
-`npm install fs`
-`npm install path`
-`npm install sequelize`
-`npm install bcrypt`
-`npm install express`
-`npm install express-session`
+###`npm install passport`
+###`npm install passort-local`
+###`npm install fs`
+###`npm install path`
+###`npm install sequelize`
+###`npm install bcrypt`
+###`npm install express`
+###`npm install express-session`
 
 -- Usage --
 
