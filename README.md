@@ -4,7 +4,7 @@
 This application allows the user to create an account, save the newly created account and log in and out of the account.
 
 ### User Story 
-As a new user to this webpage I would like to createan account and save my contact information for later use.
+As a new user to this webpage I would like to create an account and save my contact information for later use.
 
 ### Packages required 
 * `npm install passport`
@@ -18,15 +18,16 @@ As a new user to this webpage I would like to createan account and save my conta
 
 ### Usage 
 
+
 ## Files Explained 
-### CONFIG
-### MIDDLEWARE
+-- CONFIG
+ --- MIDDLEWARE   
 * isAuthenticated.js: 
 * config.json: 
-* passport.js:
+* passport.js: file dependent on: '../models'.
 
 ### MODELS
-* index.js:
+* index.js: file dependent on: '/../config/config.json'.
 * user.js:
 
 ### PUBLIC
@@ -42,13 +43,13 @@ As a new user to this webpage I would like to createan account and save my conta
 * signup.js:
 
 ### ROUTES
-* api-routes.js:
-* html-routes.js:
+* api-routes.js:  file dependent on: '../models' and '../config/passport'.
+* html-routes.js: file dependent on: '../config/middleware/isAuthenticated', '../public/signup.html', '../public/login.html', '../public/members.html'
 
 * package-lock.json: 
 * package.json: 
 
-* server.js:
+* server.js: file dependent on: './config/passport', './models', './routes/html-routes.js', './routes/api-routes.js'
 
 
 
