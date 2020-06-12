@@ -24,10 +24,12 @@ As a new user to this webpage I would like to create an account and save my cont
  --- MIDDLEWARE   
 * isAuthenticated.js: 
 * config.json: 
-* passport.js: file dependent on: '../models'.
+* passport.js: 
+-- file dependent on: `'../models'`.
 
 ### MODELS
-* index.js: file dependent on: '/../config/config.json'.
+* index.js: 
+-- file dependent on: `'/../config/config.json'`.
 * user.js:
 
 ### PUBLIC
@@ -43,13 +45,15 @@ As a new user to this webpage I would like to create an account and save my cont
 * signup.js:
 
 ### ROUTES
-* api-routes.js:  file dependent on: '../models' and '../config/passport'.
-* html-routes.js: file dependent on: '../config/middleware/isAuthenticated', '../public/signup.html', '../public/login.html', '../public/members.html'
+* api-routes.js:  
+-- file dependent on: `'../models'` and `'../config/passport'`.
+* html-routes.js: 
+--file dependent on: `'../config/middleware/isAuthenticated'`, `'../public/signup.html'`, `'../public/login.html'`, `'../public/members.html'`.
 
 * package-lock.json: 
 * package.json: 
 
-* server.js: file dependent on: './config/passport', './models', './routes/html-routes.js', './routes/api-routes.js'
+* server.js: file dependent on: `'./config/passport'`, `'./models'`, `'./routes/html-routes.js'`, `'./routes/api-routes.js'`.
 
 
 
