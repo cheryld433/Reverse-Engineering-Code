@@ -30,11 +30,10 @@ As a new user to this webpage I would like to create an account and save my cont
 -- file dependent on: `'../models'`.
 
 ### MODELS
-* index.js: 
-
+* index.js: Connects to database and imports user login information and associates them if needed. 
 -- file dependent on: `'/../config/config.json'`.
 
-* user.js:
+* user.js: 
 
 ### PUBLIC
 ### JS
