@@ -42,11 +42,12 @@ As a new user to this webpage I would like to create an account and save my cont
 
 * members.js: Performs a GET request to figure out if the user is logged in and update the page.
 
-* signup.js: 
+* signup.js: Validate email and password to ensure the input fields were not empty. If the email and password are properly input the sign up function begins. The signup function posts info to api/signup route. If successful the member page will open.
 
 #### STYLESHEETS
 * style.css: Provides style to each webpage.
 
+#### 
 * login.html: Layout of the login page.
 * members.html: Layout of the members page.
 * signup.js: Layout of the signup page.
