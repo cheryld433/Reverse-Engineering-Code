@@ -1,10 +1,9 @@
 # Reverse-Engineering-Code
 
 ### Password Authentication 
-This application allows the user to create an account, save the newly created account and log in and out of the account.
-
+This application allows the user to create an account, save the newly created account and log in and out of the account. in this activity we are tasked with reverse engineering the files, study how the program performs certain functions, below is a 
 ### User Story 
-As a new user to this webpage I would like to create an account and save my contact information for later use.
+As a new user to this webpage I would like to create an account and save my contact information for later use. 
 
 ### Packages required 
 * `npm install passport`
@@ -30,22 +29,27 @@ As a new user to this webpage I would like to create an account and save my cont
 -- file dependent on: `'../models'`.
 
 ### MODELS
-* index.js: Connects to database and imports user login information and associates them if needed. 
+* index.js: Connects to database and imports user information and associate them if needed. 
 -- file dependent on: `'/../config/config.json'`.
 
-* user.js: 
+* user.js: Creates hte user model and checks the users chosen password to see is an unhashed version is already in the database. This file requires the `Node.js` package `npm install bycryptjs`. 
 
-### PUBLIC
+### PUBLIC 
+(The public files create, style and provide fuctionality for the front end.)
+
 #### JS
-* login.js:
-* members.js:
-* signup.js:
-#### STYLESHEETS
-* style.css:
+* login.js: Validates the email and password provided by the user. If the password is correct it opens the member page.
 
-* login.html:
-* members.html:
-* signup.js:
+* members.js: Performs a GET request to figure out if the user is logged in and update the page.
+
+* signup.js: 
+
+#### STYLESHEETS
+* style.css: Provides style to each webpage.
+
+* login.html: Layout of the login page.
+* members.html: Layout of the members page.
+* signup.js: Layout of the signup page.
 
 ### ROUTES
 * api-routes.js:  
@@ -57,6 +61,11 @@ As a new user to this webpage I would like to create an account and save my cont
 * package.json: 
 
 * server.js: file dependent on: `'./config/passport'`, `'./models'`, `'./routes/html-routes.js'`, `'./routes/api-routes.js'`.
+
+### Possible changes:
+One change that I would make to the appliction would be to replace the `var` with  `const` and `let` where appropriate.
+
+
 
 
 
