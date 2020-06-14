@@ -1,7 +1,7 @@
 # Reverse-Engineering-Code
 
 ### Password Authentication 
-This application allows the user to create an account, save the newly created account and log in and out of the account. in this activity we are tasked with reverse engineering the files, study how the program performs certain functions, below is a 
+This application allows the user to create an account, save the newly created account and log in and out of the account. In this activity we are tasked with reverse engineering the files, study how the program performs certain functions, below is a breakdown of the files included in the folder. 
 ### User Story 
 As a new user to this webpage I would like to create an account and save my contact information for later use. 
 
